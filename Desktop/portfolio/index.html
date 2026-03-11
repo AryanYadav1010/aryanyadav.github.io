@@ -266,6 +266,11 @@
             <div class="end-screen__contact">
               <h3 class="end-screen__contact-title">CONTINUE? LET'S CONNECT!</h3>
               <div class="end-screen__links">
+                <a href="https://drive.google.com/file/d/1Y5MqdOGuPTtzZo7c027uljok7MQVAcZK/view?usp=sharing"
+                  target="_blank" rel="noopener" class="contact-link" data-sound="powerup">
+                  <span class="contact-link__icon">📄</span>
+                  <span class="contact-link__text">RESUME</span>
+                </a>
                 <a href="mailto:aryan95yadav@gmail.com" class="contact-link" data-sound="powerup">
                   <span class="contact-link__icon">✉</span>
                   <span class="contact-link__text">EMAIL</span>
@@ -279,6 +284,11 @@
                   data-sound="coin">
                   <span class="contact-link__icon">■</span>
                   <span class="contact-link__text">LINKEDIN</span>
+                </a>
+                <a href="https://www.instagram.com/aryan.ai.engineer/" target="_blank" rel="noopener"
+                  class="contact-link" data-sound="coin">
+                  <span class="contact-link__icon">📷</span>
+                  <span class="contact-link__text">INSTAGRAM</span>
                 </a>
               </div>
             </div>
@@ -353,6 +363,28 @@
     </p>
     <button id="tutorial-dismiss" class="tutorial-overlay__dismiss">GOT IT!</button>
   </div>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot__header">
+      <span class="chatbot__title">Fixy</span>
+      <button class="chatbot__close" onclick="toggleChatbot()">×</button>
+    </div>
+    <div class="chatbot__body" id="chatbot-body">
+      <div class="chatbot__message chatbot__message--bot">
+        Hi! I'm Fixy, Aryan's AI assistant. How can I help you today?
+      </div>
+    </div>
+    <div class="chatbot__input-area">
+      <input type="text" id="chatbot-input" class="chatbot__input" placeholder="Ask me anything..."
+        onkeypress="handleChatInput(event)">
+      <button class="chatbot__send" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <button id="chatbot-toggle" class="chatbot-toggle" onclick="toggleChatbot()">
+    <span class="chat-icon">💬</span>
+    <span class="chat-text">CHAT</span>
+  </button>
 
   <script src="script.js"></script>
 </body>
